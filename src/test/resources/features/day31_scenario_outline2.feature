@@ -1,3 +1,4 @@
+@scenario_outline2
 Feature: data_tables_feature
 
   Background:
@@ -13,7 +14,7 @@ Feature: data_tables_feature
     And user enters start date as "<start_date>"
     And user enters salary as "<salary>"
     And user clicks on Create button
-    Then verify that the name field contains "< >"
+    Then verify that the name field contains "<first_name>"
     And close the application
 
     Examples:

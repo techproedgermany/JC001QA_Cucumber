@@ -1,4 +1,4 @@
-@scenario_outline2
+@scenario_outline2 @smoke
 Feature: data_tables_feature
 
   Background:

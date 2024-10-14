@@ -24,7 +24,7 @@ public class Hooks {
         }
     }
 
-    @After ("@teapot and @flower")
+    @After ("@teapot or @flower")
     public void tearDownspecific(){
         System.out.println("This after method from Hooks class is conditional and will run only with given tag");
     }

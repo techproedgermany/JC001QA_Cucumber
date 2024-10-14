@@ -1,4 +1,4 @@
-@param_feature
+@param_feature @smoke
 Feature: search_feature
 
   Background:

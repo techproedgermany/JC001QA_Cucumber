@@ -1,4 +1,4 @@
-@scenario_outline
+@scenario_outline @regression
 Feature: search_feature
 
   Background:

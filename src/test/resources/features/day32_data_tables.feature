@@ -1,4 +1,4 @@
-@data_table
+@data_table @regression
 Feature: blue_rentals
 
   Scenario: TC01_admin_login

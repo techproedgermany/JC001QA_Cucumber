@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 14, 2024 01:20:55 am</span></a>
+<a href="#"><span class="badge badge-primary">Oct 15, 2024 09:30:23 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 14, 2024 01:20:55 am</h3>
+<h3>Oct 15, 2024 09:30:23 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 14, 2024 01:21:11 am</h3>
+<h3>Oct 15, 2024 09:30:33 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"google_search":15.265
+"blue_rentals":9.775
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@iPhone</td>
+<td>@data_table</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,24 +180,8 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@google_search</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@teapot</td>
+<td>@regression</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@smoke</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -231,13 +215,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
+passChild: 1,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 5,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -262,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@iPhone</a><a class="dropdown-item" href="#">@google_search</a><a class="dropdown-item" href="#">@teapot</a><a class="dropdown-item" href="#">@smoke</a>
+<a class="dropdown-item" href="#">@data_table</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
@@ -273,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">google_search</p>
+            <p class="name">blue_rentals</p>
             <p class="text-sm">
-              <span>01:20:55</span> / <span>00:00:15:265</span>
+              <span>09:30:24</span> / <span>00:00:09:775</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -283,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">google_search</h5>
-<span class='badge badge-success'>10.14.2024 01:20:55</span>
-<span class='badge badge-danger'>10.14.2024 01:21:11</span>
-<span class='badge badge-default'>00:00:15:265</span>
+<h5 class="test-status text-pass">blue_rentals</h5>
+<span class='badge badge-success'>10.15.2024 09:30:24</span>
+<span class='badge badge-danger'>10.15.2024 09:30:33</span>
+<span class='badge badge-default'>00:00:09:775</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -298,54 +282,30 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_01_iPhone_search</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_admin_login</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_homepage()">
-                <span>Given user is on the google homepage</span>
+              <div class="step pass-bg" title="stepdefinitions.CommonStepDef.user_navigates_to(java.lang.String)">
+                <span>Given user navigates to "https://www.bluerentalcars.com/login"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_i_phone()">
-                <span>And user search for iPhone</span>
+              <div class="step pass-bg" title="stepdefinitions.BlueRentalStepDef.user_enters_admin_email_and_password(io.cucumber.datatable.DataTable)">
+                <span>When user enters admin email and password</span>
+      <div><table class='markup-table table '><tr><td>admin_email</td><td>password</td></tr><tr><td>jack1@gmail.com</td><td>12345</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.verify_the_result_contains_i_phone()">
-                <span>Then verify the result contains iPhone</span>
+              <div class="step pass-bg" title="stepdefinitions.BlueRentalStepDef.user_clicks_on_login_button()">
+                <span>And user clicks on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.CommonStepDef.close_the_application()">
-                <span>And close the application</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>TC_02_teapot_search</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_homepage()">
-                <span>Given user is on the google homepage</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_teapot()">
-                <span>And user search for teapot</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.verify_the_result_contains_teapot()">
-                <span>Then verify the result contains teapot</span>
+              <div class="step pass-bg" title="stepdefinitions.BlueRentalStepDef.verify_login_is_successful()">
+                <span>Then verify login is successful</span>
       <div>
       </div>
               </div>
@@ -373,7 +333,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -382,12 +342,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@iPhone</p>
+<p class="name">@data_table</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@iPhone</h4>
+<h4>@data_table</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -401,57 +361,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:20:55 am</td>
+<td>09:30:24 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01_iPhone_search</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_admin_login</a>
 <div class="">
-<span class="badge badge-default">google_search.TC_01_iPhone_search</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@google_search</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@google_search</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>01:20:55 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01_iPhone_search</a>
-<div class="">
-<span class="badge badge-default">google_search.TC_01_iPhone_search</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>01:21:03 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>TC_02_teapot_search</a>
-<div class="">
-<span class="badge badge-default">google_search.TC_02_teapot_search</span>
+<span class="badge badge-default">blue_rentals.TC01_admin_login</span>
 </div>
 </td>
 </tr>
@@ -464,12 +378,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@teapot</p>
+<p class="name">@regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@teapot</h4>
+<h4>@regression</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -483,57 +397,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:21:03 am</td>
+<td>09:30:24 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>TC_02_teapot_search</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_admin_login</a>
 <div class="">
-<span class="badge badge-default">google_search.TC_02_teapot_search</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@smoke</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>01:20:55 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_01_iPhone_search</a>
-<div class="">
-<span class="badge badge-default">google_search.TC_01_iPhone_search</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>01:21:03 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='9'>TC_02_teapot_search</a>
-<div class="">
-<span class="badge badge-default">google_search.TC_02_teapot_search</span>
+<span class="badge badge-default">blue_rentals.TC01_admin_login</span>
 </div>
 </td>
 </tr>

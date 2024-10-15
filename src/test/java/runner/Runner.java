@@ -12,12 +12,14 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:output/directory"
+
         },
         monochrome = false,
         features = "./src/test/resources/features",     // provides path of the features folder
         glue = {"stepdefinitions", "hooks"},     //provides path of the step definitions folder and hooks folder
         dryRun = false,  // generates the missing step definitions, without running the existing step definitions
-        tags = "@excel"
+        tags = "@data_table"
 )
 
 public class Runner {

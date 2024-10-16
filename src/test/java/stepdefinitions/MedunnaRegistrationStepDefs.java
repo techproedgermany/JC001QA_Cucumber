@@ -89,5 +89,88 @@ public class MedunnaRegistrationStepDefs {
 
     }
 
+    ////////////////////////////
+
+    //CREATE A ROOM
+
+    //TC_01_CREATE A ROOM WITH VALID DATA
+    @Given("user enters credentials to medunna")
+    public void userToMedunnaWithCredentials(io.cucumber.datatable.DataTable dataTable) {
+        List<String> credantials = dataTable.row(1);
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.usernameLogin,credantials.get(0),2);
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.passwordLogin,credantials.get(1),2);
+    }
+
+    @And("user clicks on medunna login button")
+    public void userClicksOnMedunnaLoginButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.signInButton,2);
+    }
+
+    @Then("user clicks itemsButton")
+    public void userClicksItemsButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.items_TitlesButton,2);
+    }
+
+    @Then("user clicks roomButton")
+    public void userClicksRoomButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.RoomLink,2);
+    }
+
+    @And("user clicks create a new room button")
+    public void userClicksCreateANewRoomButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.createNewRoomButton,2);
+    }
+
+    @When("page opened  gives room credentials")
+    public void pageOpenedGivesRoomCredentials(io.cucumber.datatable.DataTable dataTable) {
+        List<String> roomArea= dataTable.row(1);
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.roomNumberField,roomArea.get(0),1);
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.roomPriceField,roomArea.get(1),1);
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.roomDescriptionField,roomArea.get(2),1);
+    }
+
+    @And("user selects deluxe room type")
+    public void userSelectsDeluxeRoomType() {
+        BrowserUtils.dropdownSelectByValue(medunnaRegistrationPage.roomTypeSelect,"DELUXE");
+        WaitUtils.waitFor(1);
+    }
+
+    @Then("user clicks status button")
+    public void userClicksStatusButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.roomStatus,2);
+    }
+
+    @Then("user gives a {string}")
+    public void userGivesA(String date) {
+        BrowserUtils.sendKeysWithTimeout(medunnaRegistrationPage.roomCreatedDate,date,2);
+    }
+
+    @And("user clicks medunnaRoom save button")
+    public void userClicksMedunnaRoomSaveButton() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.saveButton,2);
+    }
+
+    @And("user verify room number is same;")
+    public void userVerifyRoomNumberIsSame() {
+        BrowserUtils.clickWithTimeOut(medunnaRegistrationPage.createdDate,2);
+        Assert.assertEquals("1596",medunnaRegistrationPage.firstRoomNumber);
+        WaitUtils.waitFor(3);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

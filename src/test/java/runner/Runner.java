@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",     // provides path of the features folder
         glue = {"stepdefinitions", "hooks"},     //provides path of the step definitions folder and hooks folder
         dryRun = false,  // generates the missing step definitions, without running the existing step definitions
-        tags = "@data_table"
+        tags = "@param_feature"
 )
 
 public class Runner {
